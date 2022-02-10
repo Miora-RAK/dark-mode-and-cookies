@@ -1,0 +1,19 @@
+{% extends "layout.njk" %}}
+{% block content %}
+    <h1> Welcome to the option page  </h1>
+    <h2> Choose your appearance </h2>
+
+        <!--  FORM -->
+          <h2> Choose your appearance </h2>
+            <section id="option">
+             <form action = "/home" method = "post"  >
+                  <label for="ligth">Ligth</label><br>
+                  <input type="radio" id="ligth" name="theme" value="light">
+                   <label for="dark">Dark</label><br>
+                  <input type="radio" id="dark" name="theme" value="dark">
+                  <button class="submit-button" type="submit">Submit</button>
+              </form>
+            </section>
+        <!-- FORM END -->
+
+{% endblock %}
