@@ -31,7 +31,7 @@ app.post("/home", formParser, (request, response) => {
       maxAge: 3600,
     }),
   );
-  response.render("home");
+  response.render("home", { themeChoice });
 });
 
 app.listen(3000, () => {
